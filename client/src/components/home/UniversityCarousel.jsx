@@ -10,6 +10,8 @@ import {
 } from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 const universities = [
   {
     name: "Manipal University",
@@ -159,7 +161,7 @@ export default function UniversityCarousel() {
               whileHover={{ scale: 1.03 }}
               className="px-2"
             >
-              <div className=" relative max-w-[75vw] md:max-w-[20vw] mx-auto bg-white rounded-xl shadow-md overflow-hidden cursor-pointer border border-gray-200">
+              <div className=" relative mx-auto bg-white rounded-xl shadow-md overflow-hidden cursor-pointer border border-gray-200">
                 
                 <img
                   src={uni.image}
