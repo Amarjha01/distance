@@ -4,8 +4,8 @@ import Home from '../pages/Home';
 import AboutUs from '../pages/AboutUs';
 import University from '../pages/University';
 import UniversityComparisonPage from '../pages/UniversityComparisonPage.jsx';
-import Courses from '../pages/Courses.jsx';
-
+// import Courses from '../pages/Courses.jsx';
+import CourseCollegesComponent from '../pages/Courses.jsx'
 
 const routes = createBrowserRouter(
     [
@@ -29,9 +29,13 @@ const routes = createBrowserRouter(
                     path:'/:university-name',
                     element: <University />
                 },
-                {
-                    path: '/course-college',
-                    element: <Courses />
+                // {
+                //     path: '/course-college',
+                //     element: <Courses />
+                // },
+                 {
+                    path: '/colleges',
+                    element: <CourseCollegesComponent />
                 }
             ]
         }
